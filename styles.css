@@ -1,0 +1,26 @@
+.floating-object {
+  width: 200px;
+  height: 200px;
+  filter: drop-shadow(5px 5px 5px #222);
+  animation: floating 2s infinite ease-in-out;
+  padding: 10px 20px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
